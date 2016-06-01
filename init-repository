@@ -434,8 +434,8 @@ sub git_add_remotes
     }
 
     $gerrit_repo_url .= $gerrit_repo_basename;
-    $self->exe('git', 'config', 'remote.gerrit.url', $gerrit_repo_url);
-    $self->exe('git', 'config', 'remote.gerrit.fetch', '+refs/heads/*:refs/remotes/gerrit/*', '/heads/');
+    #$self->exe('git', 'config', 'remote.gerrit.url', $gerrit_repo_url);
+    #$self->exe('git', 'config', 'remote.gerrit.fetch', '+refs/heads/*:refs/remotes/gerrit/*', '/heads/');
 }
 
 sub git_clone_one_submodule
@@ -553,8 +553,8 @@ sub git_install_hooks
         my $rel = $module;
         $rel =~ s,[^/]+,..,g;
         $rel .= "../../qtrepotools/git-hooks/";
-        $self->ensure_link($rel.'gerrit_commit_msg_hook', $module.'.git/hooks/commit-msg');
-        $self->ensure_link($rel.'git_post_commit_hook', $module.'.git/hooks/post-commit');
+        #$self->ensure_link($rel.'gerrit_commit_msg_hook', $module.'.git/hooks/commit-msg');
+        #$self->ensure_link($rel.'git_post_commit_hook', $module.'.git/hooks/post-commit');
     }
 }
 
