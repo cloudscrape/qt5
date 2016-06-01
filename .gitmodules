@@ -1,6 +1,6 @@
 [submodule "qtbase"]
 	path = qtbase
-	url = ../qtbase.git
+	url = git@github.com:cloudscrape/qtbase.git
 	branch = 5.4.2
 	initrepo = true
 [submodule "qtsvg"]
@@ -55,7 +55,7 @@
 	initrepo = true
 [submodule "qtwebkit"]
 	path = qtwebkit
-	url = ../qtwebkit.git
+	url = git@github.com:cloudscrape/qtwebkit.git
 	branch = 5.4.2
 	initrepo = true
 [submodule "qtwebkit-examples"]
